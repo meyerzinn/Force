@@ -12,11 +12,16 @@ repositories {
         name = 'sponge'
         url = 'http://repo.spongepowered.org/maven'
     }
-    maven {url "https://jitpack.io"}
+    maven {
+        name "jitpack"
+        url "https://jitpack.io"
+    }
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile 'org.spongepowered:spongeapi:5.0.0'
+    compile 'org.spongepowered:spongeapi:5.+'
     compile 'com.github.FoxDenStudio.FoxGuard:FoxCore:v0.19.2-dev-api5'
+    compile group: 'com.google.inject', name: 'guice-parent', version: '3.0', ext: 'pom'
+    compile 'org.projectlombok:lombok:1.+'
 }

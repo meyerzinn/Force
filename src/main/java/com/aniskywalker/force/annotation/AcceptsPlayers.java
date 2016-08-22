@@ -1,6 +1,6 @@
-package com.aniskywalker.force.api.annotation;
+package com.aniskywalker.force.annotation;
 
-import com.aniskywalker.force.api.minigame.stage.MinigameStage;
+import com.aniskywalker.force.stage.Stage;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,10 +9,10 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface AcceptPlayers {
+public @interface AcceptsPlayers {
 
     /**
-     * Whether or not players can join during a {@link MinigameStage}.
+     * Whether or not players can join during a {@link Stage}.
      *
      * @return Whether or not players can join
      */
